@@ -1,4 +1,7 @@
 <?php
+    require_once __DIR__ . "/def.php";
+    require_once __DIR__ . "/utils.php";
+
     // リクエスト形式がPOSTでなければhome.htmlに遷移
     if($_SERVER["REQUEST_METHOD"] !== "POST"){
         header("Location: home.html");
@@ -15,7 +18,13 @@
         "message" => null, //表示するメッセージ
         "result"  => null, //更新結果（件数）
     ];
+    try{
+       
+    }catch{
 
-    
+    }finally{
+        
+    }
+
 
 ?>
