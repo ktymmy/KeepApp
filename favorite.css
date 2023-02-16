@@ -1,0 +1,16 @@
+.h1{
+    font-size: 60px;
+    /* transform: translateX(-50%) rotate(-10deg); */
+    /* display: block; */
+    /* float: left; */
+    /*コレ*/text-align: center;
+    /* position: fixed; */
+	
+	
+  }
+.h2{
+	background-color: #f2f2f2;
+	/*コレ*/text-align: center;
+    height: 50px;
+    border: 1px solid #333;
+}

@@ -1,0 +1,222 @@
+
+html,body {
+	font-size: 16px;	/*画面幅481px以上で閲覧した際の文字サイズ。ここを変更すると、他の文字サイズも連動します。※480px以下の指定箇所は下の方に別途あります。*/
+	background-image: url(home_images/背景.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+}
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #999;	/*全体の文字色*/
+	font-family: "M PLUS Rounded 1c", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	line-height: 2;		
+	/* background: #fff;	背景色 */
+	-webkit-text-size-adjust: none;
+	overflow-x: hidden;
+	
+}
+
+ul {list-style-type: none;}
+ol {padding-left: 40px;padding-bottom: 15px;}
+img {border: none;max-width: 100%;height: auto;vertical-align: middle;}
+table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
+
+.h1{
+    font-size: 60px; 
+    /*コレ*/text-align: center;
+  }
+
+.h2{
+	
+	/*コレ*/text-align: center;
+    height: 50px;
+    border: 1px solid #333;
+}
+
+.container{
+	height: 50px;
+	/* background-color: #f2f2f2; */
+	
+	/*コレ*/text-align: center;
+}
+
+/*ホームボタン*/
+/* .home_button a{
+	font-size: 30px;
+	line-height: 2;	
+	background: #add2f2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 240px;
+    padding: 200px 550px;
+    color:#999;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.home_button a::before{
+	content: '';
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 20px solid #f9fafa;
+	transition: 0.2s;
+
+}
+
+.home_button a::after{
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #333333;
+	border-right: 3px solid #333333;
+	transform: rotate(45deg);
+}
+.home_button a:hover::before{
+	top: 0;
+	left: 0;
+}
+.home_button a:hover{
+	text-decoration: none;
+  background-color: #b3d9ff;
+} */
+
+
+/*リストボタン*/
+.list_button a{
+	font-size: 30px;
+	line-height: 2;	
+	background: #add2f2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 240px;
+    padding: 200px 550px;
+    color:#999;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.list_button a::before{
+	content: '';
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 20px solid #f9fafa;
+	transition: 0.2s;
+}
+
+.list_button a::after{
+	content: '';
+	width: 5px;	
+	height: 5px;
+	border-top: 3px solid #333333;
+	border-right: 3px solid #333333;
+	transform: rotate(45deg);
+}
+.list_button a:hover::before{
+	top: 0;
+	left: 0;
+}
+.list_button a:hover{
+	text-decoration: none;
+  background-color: #b3d9ff;
+}
+
+/*お気に入りボタン*/
+.favorite_button a{
+	font-size: 30px;
+	line-height: 2;	
+	background: #add2f2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 240px;
+    padding: 200px 550px;
+    color:#999;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.favorite_button a::before{
+	content: '';
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 20px solid #f9fafa;
+	transition: 0.2s;
+
+}
+
+.favorite_button a::after{
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #333333;
+	border-right: 3px solid #333333;
+	transform: rotate(45deg);
+}
+.favorite_button a:hover::before{
+	top: 0;
+	left: 0;
+}
+.favorite_button a:hover{
+	text-decoration: none;
+  background-color: #b3d9ff;
+}
+
+/*登録ボタン*/
+.add_button a{
+	font-size: 30px;
+	line-height: 2;	
+	background: #add2f2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 100px auto;
+    max-width: 240px;
+    padding: 200px 550px;
+    color:#999;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+}
+.add_button a::before{
+	content: '';
+	position: absolute;
+	top: -35px;
+	left: -35px;
+	width: calc(100% - 4px);
+	height: calc(100% - 4px);
+	border: 20px solid #f9fafa;
+	transition: 0.2s;
+}
+
+.add_button a::after{
+	content: '';
+	width: 5px;
+	height: 5px;
+	border-top: 3px solid #333333;
+	border-right: 3px solid #333333;
+	transform: rotate(45deg);
+}
+.add_button a:hover::before{
+	top: 0;
+	left: 0;
+}
+.add_button a:hover{
+	text-decoration: none;
+  background-color: #b3d9ff;
+}
