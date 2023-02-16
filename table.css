@@ -1,7 +1,74 @@
-td,th{
+th{
+    border-style: double ;
+    border-color:#9dd9f7;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: 50px;
+    /* border-collapse: separate;
+    border-spacing:100px; */
+}
+
+td{
+    border-collapse: separate;
+    border-spacing:100px;
+}
+
+    
+
+
+table{
+
+    background-image: url(home_images/パステル青.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+
     padding: 1em,2em;
-    border-style: dotted;
+    border-style: dashed ;
    
-    border-color:#8bc2f2;
+    border-color:#3c8bc0;
     /* display: flex; */
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    border-collapse: separate;
+    border-spacing: 10px;
+}
+
+.t_button a{
+    background: #dcebf2;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 240px;
+    padding: 10px 25px;
+    color: #999;
+    transition: 0.3s ease-in-out;
+    font-weight: 500;
+    z-index:0;
+    border-left: solid 5px #6bb6ff;
+}
+
+.t_button a:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 0;
+    display: block;
+    background: #6bb6ff;
+    transition: .3s;
+    left:0;
+}
+
+.t_button a:hover{
+    color: #FFF;
+}
+
+.t_button a:hover:before{
+    width: 100%;
+    z-index: -1;
 }
