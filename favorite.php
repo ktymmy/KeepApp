@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -44,8 +43,3 @@
 </body>
 
 </html>
-=======
-<?php
-    
-?>
->>>>>>> 5cccabdcc63020b1963376f9e67040e7d32f4dee
