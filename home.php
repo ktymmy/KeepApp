@@ -24,23 +24,23 @@
             <div id="menubar">
                 <nav>
                     <ul>
-                        <!-- <div class="home_button">
-                                <li><a href="home.html">
-                                        <span>HOME</span></a></li>
-                            </div> -->
-
                         <div class="list_button">
-                            <li><a href="list.html"><span>LIST</span></a></li>
+                                <li><a href="list.php"><span>LIST</span></a></li>
                         </div>
+
                         <div class="favorite_button">
-                            <li><a href="favorite.html"><span>FAVORITE</span></a></li>
+                            <li> <a href="favorite.php"><span>FAVORITE</span></a></li>
                         </div>
+
                         <div class="add_button">
                             <li><a href="add.html"><span>ADD</span></a></li>
                         </div>
                     </ul>
                 </nav>
             </div>
+
+
+            
         </div>
 
     </main>
