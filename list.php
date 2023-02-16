@@ -29,12 +29,10 @@
                     </tr>
                 </thead>
                 <tbody>
-                    
                     <tr>
                         <td>aaa</td>
-                        <td>aaa</td>
+                        <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
                     </tr>
-                   
                 </tbody>
             </table>
         </div>

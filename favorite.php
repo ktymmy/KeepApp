@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
+    <link href="./table.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -20,8 +21,24 @@
 
     <main>
         <div class="container">
-           
+            <table class="main_table">
+                <thead class="main_thead">
+                    <tr>
+                        <th>name</th>
+                        <th>url</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>aaa</td>
+                        <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                    </tr>
+                   
+                </tbody>
+            </table>
         </div>
+
     </main>
 </body>
 

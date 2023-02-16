@@ -113,6 +113,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 	height: calc(100% - 4px);
 	border: 20px solid #f9fafa;
 	transition: 0.2s;
+	
 }
 
 .list_button a::after{
@@ -129,14 +130,14 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 }
 .list_button a:hover{
 	text-decoration: none;
-  background-color: #b3d9ff;
+  background-color:  #84c5fe;
 }
 
 /*お気に入りボタン*/
 .favorite_button a{
 	font-size: 30px;
 	line-height: 2;	
-	background: #add2f2;
+	background:  #add2f2;
     position: relative;
     display: flex;
     justify-content: space-around;
@@ -174,7 +175,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 }
 .favorite_button a:hover{
 	text-decoration: none;
-  background-color: #b3d9ff;
+  background-color: #84c5fe;
 }
 
 /*登録ボタン*/
@@ -218,5 +219,5 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 }
 .add_button a:hover{
 	text-decoration: none;
-  background-color: #b3d9ff;
+  background-color:  #84c5fe;
 }

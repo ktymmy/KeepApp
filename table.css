@@ -1,7 +1,37 @@
-td,th{
+th{
+    border-style: double ;
+    border-color:#9dd9f7;
+    /* margin-left: auto;
+    margin-right: auto; */
+    font-size: 50px;
+    /* border-collapse: separate;
+    border-spacing:100px; */
+}
+
+td{
+    border-collapse: separate;
+    border-spacing:100px;
+}
+
+    
+
+
+table{
+
+    background-image: url(home_images/パステル青.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: scroll;
+
     padding: 1em,2em;
-    border-style: dotted;
+    border-style: dashed ;
    
-    border-color:#8bc2f2;
+    border-color:#3c8bc0;
     /* display: flex; */
+
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    border-collapse: separate;
+    border-spacing: 10px;
 }
