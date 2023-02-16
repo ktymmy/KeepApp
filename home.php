@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>keepApp</title>
-    <link href="./home.css" rel="stylesheet">
+    <link href="./all.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -33,14 +33,14 @@
                         </div>
 
                         <div class="add_button">
-                            <li><a href="add.html"><span>ADD</span></a></li>
+                            <li><a href="add.php"><span>ADD</span></a></li>
                         </div>
                     </ul>
                 </nav>
             </div>
 
 
-            
+
         </div>
 
     </main>

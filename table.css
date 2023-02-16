@@ -1,0 +1,7 @@
+td,th{
+    padding: 1em,2em;
+    border-style: dotted;
+   
+    border-color:#8bc2f2;
+    /* display: flex; */
+}

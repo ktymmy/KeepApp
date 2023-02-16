@@ -14,7 +14,7 @@
     <header class="header">
         <div class="title-text">
             <h1 class="h1">keepApp</h1>
-            <h2 class="h2">FAVORITE</h2>
+            <h2 class="h2">ADD</h2>
         </div>
     </header>
 
