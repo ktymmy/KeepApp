@@ -25,16 +25,16 @@
                 <thead class="main_thead">
                     <tr>
                         <th>name</th>
-                        <th>url</th>
                     </tr>
                 </thead>
                 <tbody>
-                    
                     <tr>
-                        <td>aaa</td>
-                        <td>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</td>
+                        <td> 
+                            <div class="t_button">
+                                <a href="https://cpoint-lab.co.jp/article/202003/14512/"><span>aaa</span></a>
+                            </div>
+                        </td>
                     </tr>
-                   
                 </tbody>
             </table>
         </div>
