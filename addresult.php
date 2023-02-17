@@ -2,6 +2,8 @@
     require_once __DIR__ . "/def.php";
     require_once __DIR__ . "/utils.php";
 
+
+
     // リクエスト形式がPOSTでなければhome.htmlに遷移
     if($_SERVER["REQUEST_METHOD"] !== "POST"){
         header("Location: home.html");
@@ -18,6 +20,7 @@
         "message" => null, //表示するメッセージ
         "result"  => null, //更新結果（件数）
     ];
+
     try{
        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
        $db = new PDO($dsn, "kp_user", "ecc");
@@ -39,9 +42,9 @@
         $result['massage'] = "URLを入力してください。";
        }
 
-       $sql_cnt = "SELECT COUNT(site_name) FROM keep WHERE site_name = :site_name";
+       $sql_cnt = "SELECT COUNT(site_name) FROM keep_url WHERE site_name = :site_name";
        $stmt = $db->prepare($sql_cnt);
-       $stmt->bindParam('product_no', $product_no);
+       $stmt->bindParam('site_name', $site_name);
        $stmt->execute();
        if ($stmt->fetch()[0] == 1) {
         $result['status'] = false;
@@ -51,6 +54,7 @@
        // いったん切断
        $stmt = null;
        $db = null;
+
        //DB接続
        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
        $db = new PDO($dsn, "kp_user", "ecc");
@@ -59,24 +63,25 @@
        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
        if($result['status']){
-        $sql = "INSERT INTO keep VALUES(:site_name, :url)";
-        //SQLの準備
-        $stmt = $db->prepare($sql);
-        //データのバインド
-        $stmt->bindParam('site_name', $site_name, PDO::PARAM_STR);
-        $stmt->bindParam('url', $url, PDO::PARAM_STR);
-        // SQL実行(戻り値は変更した件数)
-        $result["result"] = $stmt->execute();
-        //結果が1(1件挿入できた)ときはコミットする
-        if ($result["result"] !== 0) {
-         $db->commit();
-         $result["message"] = "データ登録に成功しました！";
+            $sql = "INSERT INTO keep_url VALUES(:site_name, :url)";
+            //SQLの準備
+            $stmt = $db->prepare($sql);
+            //データのバインド
+            $stmt->bindParam('site_name', $site_name, PDO::PARAM_STR);
+            $stmt->bindParam('url', $url, PDO::PARAM_STR);
+            // SQL実行(戻り値は変更した件数)
+            $result["result"] = $stmt->execute();
+            //結果が1(1件挿入できた)ときはコミットする
+            if ($result["result"] !== 0) {
+                $db->commit();
+                $result["message"] = "データ登録に成功しました！";
+            }
         }
-    }
-    }catch(PDOException $poe){
-        $db->rollBack(); 
+    } catch (PDOException $poe) {
         echo "DB接続エラー" . $poe->getMessage();
-    }finally{
+        $db->rollBack(); // ⑥ロールバック
+    
+    } finally {
         $stmt = null;
         $db = null;
     }

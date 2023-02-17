@@ -20,7 +20,7 @@
     </header>
 
     <main>
-        <form action="addresult.php" method="post" novalidate>
+        <form action="addresult.php" method="POST" novalidate>
              
              <div class="col">
                 <label class="form-label" for="name">Name<em class="text-danger">※必須</em></label>
