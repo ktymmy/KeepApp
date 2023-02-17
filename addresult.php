@@ -80,6 +80,5 @@
         $stmt = null;
         $db = null;
     }
-
-
 ?>
+
