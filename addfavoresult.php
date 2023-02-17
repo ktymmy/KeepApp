@@ -39,7 +39,7 @@
         $result['massage'] = "URLを入力してください。";
        }
 
-       $sql_cnt = "SELECT COUNT(site_name) FROM keep_url WHERE site_name = :site_name";
+       $sql_cnt = "SELECT COUNT(site_name) FROM keep_favo_url WHERE site_name = :site_name";
        $stmt = $db->prepare($sql_cnt);
        $stmt->bindParam('product_no', $product_no);
        $stmt->execute();
@@ -59,7 +59,7 @@
        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
        if($result['status']){
-        $sql = "INSERT INTO keep_url VALUES(:site_name, :url)";
+        $sql = "INSERT INTO keep_favo_url VALUES(:site_name, :url)";
         //SQLの準備
         $stmt = $db->prepare($sql);
         //データのバインド
