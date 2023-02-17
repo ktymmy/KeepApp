@@ -4,7 +4,7 @@
 
     // リクエスト形式がPOSTでなければhome.htmlに遷移
     if($_SERVER["REQUEST_METHOD"] !== "POST"){
-        header("Location: home.html");
+        header("Location: home.php");
         exit;
     }
 
