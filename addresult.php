@@ -74,7 +74,7 @@
         }
     }
     }catch(PDOException $poe){
-        $db->rollBack(); // ⑥ロールバック
+        $db->rollBack(); 
         echo "DB接続エラー" . $poe->getMessage();
     }finally{
         $stmt = null;
@@ -83,3 +83,35 @@
 
 
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>keepApp</title>
+    <link href="./all.css" rel="stylesheet">
+    <link href="./table.css" rel="stylesheet">
+    <script src="./KeepApp.js"></script>
+</head>
+
+<body>
+
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="title-text">
+            <h1 class="h1">keepApp</h1>
+            <h2 class="h2">LIST</h2>
+        </div>
+    </header>
+
+    <main>
+        <!-- 結果表示     -->
+        <div class="text-center">
+                <p class="text-danger"><?= $result["message"] ?></p>
+            </div>
+            </div>
+    </main>
+</body>
+
+</html>

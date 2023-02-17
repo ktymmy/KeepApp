@@ -1,0 +1,24 @@
+.col{
+    position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+
+.col input[type='taxt']:focus{
+    font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 5px solid #1b2538;
+	border-radius: 4px;
+}
+
+.form-label input[type='text']:focus{
+    border: 5px solid #107fa4;
+	outline: none;
+}
+
+
