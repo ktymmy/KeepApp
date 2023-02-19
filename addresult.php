@@ -96,7 +96,7 @@
     <meta charset="UTF-8">
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
-    <link href="./table.css" rel="stylesheet">
+    <link href="./add.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
