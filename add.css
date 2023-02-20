@@ -1,65 +1,70 @@
-/* .site_name{
+*::-webkit-input-placeholder {
+  color: #fff;
+}
+*:-moz-placeholder {
+  color: #fff;
+}
+*::-moz-placeholder {
+  color: #fff;
+}
+*:-ms-input-placeholder {
+  color: #fff;
+}
 
-    position: relative;
-	width: 80%;
-	margin: 40px 3%;
-    font-size: 60px;;
-} */
+#containter {
+text-align: center;
+}
 
-.cp_iptxt {
-	position: relative;
-	width: 80%;
-	margin: 40px 3%;
+h3{
+color: #55acee;
+font-family: cursive;
+font-weight: bold;
+font-size: 72px;
+margin-top: 50px;
 }
-.cp_iptxt input[type='text'] {
-	font: 15px/24px sans-serif;
-	box-sizing: border-box;
-	width: 100%;
-	letter-spacing: 1px;
-	padding-left: 4em;
+
+.textbox {
+margin-top: 40px;
+font-family: cursive;
+border: 1px solid #acacac;
+color: #fff;
+opacity: .7;
+border-radius: 10px;
+padding: 30px;
+text-align: center;
+width: 400px;
+transition: all .3s;
+-webkit-transition: all .3s;
+-moz-transition: all .3s;
+font-size: 30px;
+outline: none;
+background-color: #acacac;
 }
-.cp_iptxt input[type='text']:focus {
-	outline: none;
+
+.textbox:focus {
+width: 500px;
+outline: none;
 }
-.ef {
-	position: relative;
-	padding: 7px 15px;
-	border: 0;
-	border: 1px solid #1b2538;
-	background: transparent;
+
+
+.R-button{
+  margin-top: 100px;
+  font-size: 50px;
+
+  display: inline-block;
+  text-decoration: none;
+  color: #668ad8;
+  width: 320px;
+  height: 320px;
+  line-height: 120px;
+  border-radius: 50%;
+  border: double 4px #668ad8;
+  text-align: center;
+  overflow: hidden;
+  transition: .6s;
 }
-.ef ~ .focus_bg {
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	width: 0;
-	height: 100%;
-	transition: 0.4s;
-	background-color: transparent;
-}
-.ef:focus {
-	border: 1px solid #da3c41;
-}
-.ef:focus ~ .focus_bg, .cp_iptxt.ef ~ .focus_bg {
-	width: 100%;
-	transition: 0.4s;
-	background-color: rgba(218,60,65,.3);
-}
-.ef ~ label {
-	position: absolute;
-	z-index: -1;
-	top: 10px;
-	left: 14px;
-	width: 100%;
-	transition: 0.3s;
-	letter-spacing: 0.5px;
-	color: #aaaaaa;
-}
-.ef:focus ~ label, .cp_iptxt.ef ~ label {
-	font-size: 12px;
-	top: -18px;
-	left: 0;
-	transition: 0.3s;
-	color: #da3c41;
+
+.R-button:hover {
+  -webkit-transform: rotateY(360deg);
+  transform: rotateY(360deg);
 }

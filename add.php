@@ -22,20 +22,21 @@
     <main>
         <form action="addresult.php" method="POST" novalidate>
              
-            <div class="cp_iptxt">
-                <input type="text" name="site_name" id="site_name" class="ef" placeholder="" required>
-                    <label class="form-label" for="name">Name</label>
-                    <span class="focus_line"></span>
-            </div>
-              
-            <div class="col">
-                <input type="text" name="url" id="url" class="form-control form-control-lg border-info" placeholder="" required>
-                    <label class="form-label" for="name">Url</label>
-            </div>   
-
+            <div id="containter">
+                <h3>Name</h3>
+                <input  class="textbox" type="text" name="site_name" placeholder="" required>
+           
+                <h3>URL</h3>
+                <input class="textbox" type="text" name="url" placeholder="" required>
+            
+           
               <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="submit" class="btn btn-danger btn-lg">入力内容の確認</button>
+                 <button type="submit" class="R-button">登録</button>
+              </div>
+            
+            </div>
         </form>
+
     </main>
 </body>
 

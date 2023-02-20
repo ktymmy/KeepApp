@@ -112,7 +112,7 @@
 
     <main>
         <!-- 結果表示     -->
-        <div class="text-center">
+        <div class="text-result">
                 <p class="text-danger"><?= $result["message"] ?></p>
             </div>
             </div>
