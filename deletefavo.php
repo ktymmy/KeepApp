@@ -16,7 +16,7 @@
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
-        $sql = "SELECT * FROM keep_url WHERE site_name = :site_name";
+        $sql = "SELECT * FROM keep_favo_url WHERE site_name = :site_name";
 
         $stmt = $db->prepare($sql);
         $stmt->bindparam(':site_name', $site_name, PDO::PARAM_STR);

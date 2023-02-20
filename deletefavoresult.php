@@ -21,7 +21,7 @@
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $db->beginTransaction();
-        $sql = "DELETE FROM keep_url where SITE_NAME = :site_name";
+        $sql = "DELETE FROM keep_favo_url where SITE_NAME = :site_name";
         $stmt = $db->prepare($sql);
         $stmt->bindparam(":site_name",$site_name, PDO::PARAM_STR);
 
