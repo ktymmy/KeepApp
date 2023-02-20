@@ -59,20 +59,20 @@
        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
        if($result['status']){
-        $sql = "INSERT INTO keep_url VALUES(:site_name, :url)";
-        //SQLの準備
-        $stmt = $db->prepare($sql);
-        //データのバインド
-        $stmt->bindParam('site_name', $site_name, PDO::PARAM_STR);
-        $stmt->bindParam('url', $url, PDO::PARAM_STR);
-        // SQL実行(戻り値は変更した件数)
-        $result["result"] = $stmt->execute();
-        //結果が1(1件挿入できた)ときはコミットする
-        if ($result["result"] !== 0) {
-         $db->commit();
-         $result["message"] = "データ登録に成功しました！";
+            $sql = "INSERT INTO keep_url VALUES(:site_name, :url)";
+            //SQLの準備
+            $stmt = $db->prepare($sql);
+            //データのバインド
+            $stmt->bindParam('site_name', $site_name, PDO::PARAM_STR);
+            $stmt->bindParam('url', $url, PDO::PARAM_STR);
+            // SQL実行(戻り値は変更した件数)
+            $result["result"] = $stmt->execute();
+            //結果が1(1件挿入できた)ときはコミットする
+            if ($result["result"] !== 0) {
+                $db->commit();
+                $result["message"] = "データ登録に成功しました！";
+            }
         }
-    }
     }catch(PDOException $poe){
         $db->rollBack(); // ⑥ロールバック
         echo "DB接続エラー" . $poe->getMessage();
