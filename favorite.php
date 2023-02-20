@@ -4,7 +4,7 @@
     $site_name = filter_input(INPUT_GET, "site_name");
     $url = filter_input(INPUT_GET, "url");
 
-    $dsn = "mysql:host=localhost;dbname=studb;charset=utf8mb4";
+    $dsn = "mysql:host=localhost;dbname=keep;charset=utf8mb4";
     try{
         $db = new PDO($dsn, "kp_user", "ecc");
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
