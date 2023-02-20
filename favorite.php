@@ -64,6 +64,7 @@
                     </tr>
                 </thead>
                 <tbody>
+                <?php foreach($result as $val):?>
                     <tr>
                         <td> 
                             <div class="t_button">
@@ -71,6 +72,7 @@
                             </div>
                         </td>
                     </tr>
+                <?php endforeach ?>
                 </tbody>
             </table>
         </div>
