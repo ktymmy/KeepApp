@@ -67,13 +67,15 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td> 
-                            <div class="t_button">
-                                <a href="https://cpoint-lab.co.jp/article/202003/14512/"><span></span></a>
-                            </div>
-                        </td>
-                    </tr>
+                    <?php foreach($result as $val):?>
+                        <tr>
+                            <td> 
+                                <div class="t_button">
+                                    <a href="<?= $val["url"] ?>"><span><?= $val["site_name"] ?></span></a>
+                                </div>
+                            </td>
+                        </tr>
+                    <?php endforeach ?>
                 </tbody>
             </table>
         </div>
