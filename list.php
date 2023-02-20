@@ -6,7 +6,7 @@
 
     $dsn = "mysql:host=localhost;dbname=studb;charset=utf8mb4";
     try{
-        $db = new PDO($dsn, "dbuser", "ecc");
+        $db = new PDO($dsn, "kp_user", "ecc");
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $sql = "SELECT * FROM keep_url ";
         $where = "";
