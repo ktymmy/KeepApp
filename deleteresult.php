@@ -28,7 +28,7 @@
         $result["result"] = $stmt->execute();
         if($result["result"] !== 0){
             $db->commit();
-            $result["message"] = "データ登録に成功しました！";
+            $result["message"] = "データ削除に成功しました！";
         }
     }catch(PDOException $poe){
         $db->rollback();

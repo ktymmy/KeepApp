@@ -115,6 +115,7 @@
         <!-- 結果表示     -->
         <div class="text-result">
                 <p class="text-danger"><?= $result["message"] ?></p>
+                <a href="<?= $url ?>"></a>
             </div>
             </div>
     </main>
