@@ -1,8 +1,8 @@
 <?php
     require_once __DIR__ . "/def.php";
     require_once __DIR__ . "/utils.php";
-    $site_name = filter_input(INPUT_GET, "site_name");
-    $url = filter_input(INPUT_GET, "url");
+    $favo_site_name = filter_input(INPUT_GET, "favo_site_name");
+    $favo_url = filter_input(INPUT_GET, "favo_url");
 
     $dsn = "mysql:host=localhost;dbname=keep;charset=utf8mb4";
     try{
@@ -13,12 +13,12 @@
         $nameLike = "";
         if($site_name != ""){
             $nameLike = "%".$site_name."%";
-            $where = " WHERE site_name like :site_name ";
+            $where = " WHERE favo_site_name like :favo_site_name ";
         }
 
         $stmt = $db->prepare($sql.$where);
-        if($site_name != ""){
-            $stmt->bindParam(":site_name",$nameLike,PDO::PARAM_STR);
+        if($favo_site_name != ""){
+            $stmt->bindParam(":favo_site_name",$nameLike,PDO::PARAM_STR);
         }
 
         $stmt->execute();
@@ -68,7 +68,7 @@
                     <tr>
                         <td> 
                             <div class="t_button">
-                                <a href="<?= $val["url"] ?>"><span><?= $val["site_name"] ?></span></a>
+                                <a href="<?= $val["favo_url"] ?>"><span><?= $val["favo_site_name"] ?></span></a>
                             </div>
                         </td>
 
