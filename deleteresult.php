@@ -33,7 +33,6 @@
     }catch(PDOException $poe){
         echo "db接続エラー". $poe->getMessage();
         $db->rollback();
-       
     }finally{
         $stmt = null;
         $db = null;
