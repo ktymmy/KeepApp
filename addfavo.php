@@ -15,12 +15,12 @@
     <header class="header">
         <div class="title-text">
             <h1 class="h1">keepApp</h1>
-            <h2 class="h2">ADD</h2>
+            <h2 class="h2">ADD FAVORITE</h2>
         </div>
     </header>
 
     <main>
-        <form action="addresult.php" method="POST" novalidate>
+        <form action="addfavoresult.php" method="POST" novalidate>
             
             <div id="containter">
                 <h3>Name</h3>
@@ -31,7 +31,7 @@
 
                 
               <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-                 <button type="submit" class="R-button">登録</button>
+                 <button type="submit" class="R-button">お気に入り</button>
               </div>
 
             </div>

@@ -71,6 +71,12 @@
                                 <a href="<?= $val["url"] ?>"><span><?= $val["site_name"] ?></span></a>
                             </div>
                         </td>
+
+                        <td>
+                                <div class="t_button">
+                                    <a href="delete.php?site_name=<?= $val["site_name"] ?>">delete</a>
+                                </div>
+                            </td>
                     </tr>
                 <?php endforeach ?>
                 </tbody>
