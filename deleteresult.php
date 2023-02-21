@@ -15,7 +15,7 @@
     // POSTデータ取得
     $site_name = filter_input(INPUT_POST,"site_name");
     try{
-        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . "charset=utf8mb4";
+        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
         $db = new PDO($dsn, "kp_user", "ecc");
         //接続の属性設定 ATTR_EMULATE_PREPARESはいつもfalseにしておく
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
@@ -33,7 +33,6 @@
     }catch(PDOException $poe){
         echo "db接続エラー". $poe->getMessage();
         $db->rollback();
-       
     }finally{
         $stmt = null;
         $db = null;
