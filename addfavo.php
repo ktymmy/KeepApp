@@ -24,10 +24,10 @@
             
             <div id="containter">
                 <h3>Name</h3>
-                <input  class="textbox" type="text" name="site_name" placeholder="URLの名前を登録してください" required>
+                <input  class="textbox" type="text" name="favo_site_name" placeholder="URLの名前を登録してください" required>
            
                 <h3>URL</h3>
-                <input class="textbox" type="text" name="url" placeholder="'URL'を入力してください" required>
+                <input class="textbox" type="text" name="favo_url" placeholder="'URL'を入力してください" required>
 
                 
               <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">

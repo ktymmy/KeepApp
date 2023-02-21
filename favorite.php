@@ -11,8 +11,8 @@
         $sql = "SELECT * FROM keep_favo_url ";
         $where = "";
         $nameLike = "";
-        if($site_name != ""){
-            $nameLike = "%".$site_name."%";
+        if($favo_site_name != ""){
+            $nameLike = "%".$favo_site_name."%";
             $where = " WHERE favo_site_name like :favo_site_name ";
         }
 
@@ -61,6 +61,7 @@
                 <thead class="main_thead">
                     <tr>
                         <th>name</th>
+                        <th>delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -74,7 +75,7 @@
 
                         <td>
                                 <div class="t_button">
-                                    <a href="delete.php?site_name=<?= $val["site_name"] ?>">delete</a>
+                                    <a href="delete.php?favo_site_name=<?= $val["favo_site_name"] ?>">delete</a>
                                 </div>
                             </td>
                     </tr>
