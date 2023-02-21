@@ -1,14 +1,14 @@
 *::-webkit-input-placeholder {
-  color: #fff;
+  color: #000000;
 }
 *:-moz-placeholder {
-  color: #fff;
+  color: #000000;
 }
 *::-moz-placeholder {
-  color: #fff;
+  color: #0a0a0a;
 }
 *:-ms-input-placeholder {
-  color: #fff;
+  color: #090909;
 }
 
 #containter {
@@ -16,7 +16,7 @@ text-align: center;
 }
 
 h3{
-color: #55acee;
+color: #feffff;
 font-family: cursive;
 font-weight: bold;
 font-size: 72px;
@@ -26,23 +26,23 @@ margin-top: 50px;
 .textbox {
 margin-top: 40px;
 font-family: cursive;
-border: 1px solid #acacac;
-color: #fff;
+border: 1px solid #f2f2f2;
+color: #0f0f0f;
 opacity: .7;
 border-radius: 10px;
 padding: 30px;
 text-align: center;
-width: 400px;
+width: 500px;
 transition: all .3s;
 -webkit-transition: all .3s;
 -moz-transition: all .3s;
 font-size: 30px;
 outline: none;
-background-color: #acacac;
+background-color: #ffffff;
 }
 
 .textbox:focus {
-width: 500px;
+width: 700px;
 outline: none;
 }
 

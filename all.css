@@ -1,15 +1,15 @@
 
 html,body {
 	font-size: 16px;	/*画面幅481px以上で閲覧した際の文字サイズ。ここを変更すると、他の文字サイズも連動します。※480px以下の指定箇所は下の方に別途あります。*/
-	background-image: url(home_images/背景.jpg);
+	background-image: url(home_images/S__274669572.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
 }
 body {
-	margin: 0px;
+	margin: 0px;	
 	padding: 0px;
-	color: #999;	/*全体の文字色*/
+	color: #ffffff;	/*全体の文字色*/
 	font-family: "M PLUS Rounded 1c", "ヒラギノ丸ゴ Pro", "Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
 	line-height: 2;		
 	/* background: #fff;	背景色 */
@@ -32,7 +32,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 	
 	/*コレ*/text-align: center;
     height: 50px;
-    border: 1px solid #333;
+    border: 1px solid #f1eeee;
 }
 
 .container{
@@ -90,7 +90,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 
 /*リストボタン*/
 .list_button a{
-	font-size: 30px;
+	font-size: 80px;
 	line-height: 2;	
 	background: #add2f2;
     position: relative;
@@ -113,7 +113,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 	height: calc(100% - 4px);
 	border: 20px solid #f9fafa;
 	transition: 0.2s;
-	
+	color:#999;
 }
 
 .list_button a::after{
@@ -123,6 +123,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 	border-top: 3px solid #333333;
 	border-right: 3px solid #333333;
 	transform: rotate(45deg);
+	
 }
 .list_button a:hover::before{
 	top: 0;
@@ -131,11 +132,12 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 .list_button a:hover{
 	text-decoration: none;
   background-color:  #84c5fe;
+  color:#fcfafa;
 }
 
 /*お気に入りボタン*/
 .favorite_button a{
-	font-size: 30px;
+	font-size: 80px;
 	line-height: 2;	
 	background:  #add2f2;
     position: relative;
@@ -176,11 +178,12 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 .favorite_button a:hover{
 	text-decoration: none;
   background-color: #84c5fe;
+  color:#fcfafa;
 }
 
 /*登録ボタン*/
 .add_button a{
-	font-size: 30px;
+	font-size: 80px;
 	line-height: 2;	
 	background: #add2f2;
     position: relative;
@@ -220,6 +223,7 @@ table {border-collapse:collapse;font-size: 1rem;border-spacing: 0;}
 .add_button a:hover{
 	text-decoration: none;
   background-color:  #84c5fe;
+  color:#fcfafa;
 }
 
 
