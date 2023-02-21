@@ -15,7 +15,7 @@
     // POSTデータ取得
     $favo_site_name = filter_input(INPUT_POST,"favo_site_name");
     try{
-        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . "charset=utf8mb4";
+        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
         $db = new PDO($dsn, "kp_user", "ecc");
         //接続の属性設定 ATTR_EMULATE_PREPARESはいつもfalseにしておく
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
