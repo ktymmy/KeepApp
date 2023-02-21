@@ -1,4 +1,5 @@
 th{
+    
     border-style: double ;
     border-color:#9dd9f7;
     /* margin-left: auto;
@@ -6,24 +7,26 @@ th{
     font-size: 50px;
     /* border-collapse: separate;
     border-spacing:100px; */
+    
 }
 
 td{
+    
+
     border-collapse: separate;
     border-spacing:100px;
+   
 }
 
     
 
 
 table{
-
-    background-image: url(home_images/パステル青.jpg);
-    background-repeat: no-repeat;
+    /* background-image: url(home_images/S__274669573.jpg); */
 	background-size: cover;
 	background-attachment: scroll;
 
-    padding: 1em,2em;
+    padding: 50px;
     border-style: dashed ;
    
     border-color:#3c8bc0;
@@ -31,19 +34,22 @@ table{
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
+    width: 70%;
+    
     font-size: 50px;
     border-collapse: separate;
-    border-spacing: 10px;
+    border-spacing: 100px;
 }
 
+
 .t_button a{
-    background: #dcebf2;
+    background: #eff0f1;
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 0 auto;
-    max-width: 240px;
     padding: 10px 25px;
     color: #999;
     transition: 0.3s ease-in-out;

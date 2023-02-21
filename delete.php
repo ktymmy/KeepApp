@@ -38,3 +38,56 @@
         $db = null;
     }
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>keepApp</title>
+    <link href="./all.css" rel="stylesheet">
+    <link href="./table.css" rel="stylesheet">
+    <script src="./KeepApp.js"></script>
+</head>
+
+<body>
+
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="title-text">
+            <h1 class="h1">keepApp</h1>
+            <h2 class="h2">DELETE</h2>
+        </div>
+    </header>
+
+    <main>
+
+    <form action="deleteresult.php" method="POST">
+        <div class="col">
+            <p class="text-danger fs-5 fw-bold">
+                下記のデータを削除します。
+            </p>
+        </div>
+
+
+        <div class="col">
+            <label class="form-label" for="site_name">Name</label>
+            <input type="text" name="site_name" id="site_name" class="form-control form-control-lg border-info bg-light" value="<?=$result["site_name"]?>" readonly>
+        </div>
+
+        <div class="col">
+            <label class="form-label" for="url">Url</label>
+            <input type="text" name="url" id="url" class="form-control form-control-lg border-info bg-light" value="<?=$result["url"]?>" readonly>
+        </div>
+
+        <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
+            <button type="submit" class="btn btn-danger btn-lg">削除</button>
+            <a class="btn btn-secondary btn-lg" href="">戻る</a>
+        </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
+
+
+    </form> 
+    </main>
+</body>
+
+</html>

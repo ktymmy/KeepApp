@@ -31,11 +31,57 @@
             $result["message"] = "データ登録に成功しました！";
         }
     }catch(PDOException $poe){
-        $db->rollback();
         echo "db接続エラー". $poe->getMessage();
+        $db->rollback();
+       
     }finally{
         $stmt = null;
         $db = null;
     }
 
 ?>
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>keepApp</title>
+    <link href="./all.css" rel="stylesheet">
+    <link href="./table.css" rel="stylesheet">
+    <script src="./KeepApp.js"></script>
+</head>
+
+<body>
+
+    <!--ヘッダー-->
+    <header class="header">
+        <div class="title-text">
+            <h1 class="h1">keepApp</h1>
+            <h2 class="h2">DELETE RESULT</h2>
+        </div>
+    </header>
+
+    <main>
+      <div class="form-control">
+
+        <div class="p-5 row">
+          <div class="col-md-5">
+          
+            <div class="col">
+                <p class="text-danger"><?= $result["message"];?></p>
+            </div>
+
+           
+            <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="list.php">戻る</a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </main>
+</body>
+
+</html>
