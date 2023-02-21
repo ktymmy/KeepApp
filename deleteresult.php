@@ -15,7 +15,7 @@
     // POSTデータ取得
     $site_name = filter_input(INPUT_POST,"site_name");
     try{
-        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . "charset=utf8mb4";
+        $dsn = "mysql:host=" . DB_HOST . ";dbname=" . DB_NAME . ";charset=utf8mb4";
         $db = new PDO($dsn, "kp_user", "ecc");
         //接続の属性設定 ATTR_EMULATE_PREPARESはいつもfalseにしておく
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
@@ -48,7 +48,7 @@
     <meta charset="UTF-8">
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
-    <link href="./table.css" rel="stylesheet">
+    <link href="./delete.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -74,7 +74,7 @@
 
            
             <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="list.php">戻る</a>
+                <a class="R-button" href="list.php">戻る</a>
             </div>
 
           </div>
