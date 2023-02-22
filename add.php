@@ -29,6 +29,16 @@
                 <h3>URL</h3>
                 <input class="textbox" type="text" name="url" placeholder="'URL'を入力してください" required>
 
+
+
+
+                <h3>CATEGORY</h3>
+                <select name="category" class="category">
+                    <option value="1" selected>LIST</option>
+                    <option value="2">FAVORITE</option>
+                </select>
+            
+
                 
               <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
                  <button type="submit" class="R-button">登録</button>
