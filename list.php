@@ -12,24 +12,29 @@
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         $sql = "SELECT * FROM keep_url ";
         $where = "";
-        $nameLike = "";
-        $categorywhere = "";
-        if($site_name != ""){
-            $nameLike = "%".$site_name."%";
-            $where = " WHERE site_name like :site_name ";
+        if($category == 1){
+            $where = "where category = 'list'";
+        }else if($category == 2){
+            $where = "where category = 'favorite'";
         }
-        if($category != 1 && $category != ""){
-            if($category == 2){
-              $categorywhere = "favorite";
-            }else{
-              $categorywhere = "list";
-            }
-            if($name != ""){
-              $where = $where."AND category = :category";
-            }else{
-              $where = "WHERE category = :category";
-            }
-          }
+
+        // if($category != 1 && $category != ""){
+        //     if($category == 2){
+        //       $categorywhere = "favorite";
+        //     }else{
+        //       $categorywhere = "list";
+        //     }
+        //     if($name != ""){
+        //       $where = $where."AND category = :category";
+        //     }else{
+        //       $where = "WHERE category = :category";
+        //     }
+        // }
+
+        if($site_name != ""){
+            $where = $where. " AND site_name like '%:site_name%' ";
+        }
+       
 
         $stmt = $db->prepare($sql.$where);
         if($site_name != ""){
