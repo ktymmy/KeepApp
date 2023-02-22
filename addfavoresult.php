@@ -105,11 +105,22 @@
     </header>
 
     <main>
-        <!-- 結果表示     -->
-        <div class="text-result">
-                <p class="text-danger"><?= $result["message"] ?></p>
-            </div>
-            </div>
+        <div id="containter">
+             <!-- 結果表示     -->
+               <h3> <p class="text-danger"><?= $result["message"] ?></p></h3>
+                <div class="btn-wrap--perspective">
+                        <a class="btn btn-3d btn-3db" href="favorite.php">FAVORITE LISTへ戻る</a>
+                </div>
+                <br/>
+                <div class="btn-wrap--perspective">
+                    <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+                </div>
+                <br/>
+                <div class="btn-wrap--perspective">
+                    <a class="btn btn-3d btn-3db" href="select.php"> ADDへ戻る </a>
+                </div>
+                
+        </div>
     </main>
 </body>
 
