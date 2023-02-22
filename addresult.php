@@ -112,12 +112,23 @@
     </header>
 
     <main>
-        <!-- 結果表示     -->
-        <div class="text-result">
-                <p class="text-danger"><?= $result["message"] ?></p>
-                <a href="<?= $url ?>"></a>
-            </div>
-            </div>
+        <div id="containter">
+            <!-- メッセージの表示 !-->
+            <h3><p class="text-danger"><?= $result["message"] ?></p></h3>
+            <a href="<?= $url ?>"></a>
+
+                <div class="btn-wrap--perspective">
+                    <a class="btn btn-3d btn-3db" href="list.php">LISTへ戻る</a>
+                </div>
+                <br/>
+                <div class="btn-wrap--perspective">
+                    <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+                </div>
+                <br/>
+                <div class="btn-wrap--perspective">
+                    <a class="btn btn-3d btn-3db" href="select.php"> ADDへ戻る </a>
+                </div>
+        </div>
     </main>
 </body>
 

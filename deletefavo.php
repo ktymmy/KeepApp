@@ -67,8 +67,8 @@
     <form action="deletefavoresult.php" method="POST">
         <div class="col">
             <p class="text-danger fs-5 fw-bold">
-                下記のデータを削除します。
-            </p>
+               <h3> 下記のデータを<span class=attention>削除</span>します。 </h3>
+             </p>
         </div>
 
         <div id="containter">
@@ -86,7 +86,9 @@
             <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
                 <button type="submit" class="R-button">削除</button>   
             </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
-            <a class="R-button" href="favorite.php">戻る</a>
+            <div class="btn-wrap--perspective">
+                <a href="list.php" class="btn btn-3d btn-3db">戻る<i class="fas fa-angle-down fa-position-right"></i></a>
+            </div>
         </div>
 
     </form> 

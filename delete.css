@@ -21,6 +21,12 @@
   font-weight: bold;
   font-size: 72px;
   margin-top: 50px;
+  text-align: center;
+  }
+
+  .attention{
+    color: #f10202;
+    background-color: #f2f2f2;
   }
   
   .textbox {
@@ -93,7 +99,7 @@ button.btn {
   line-height: 2;
   position: relative;
   display: inline-block;
-  padding: 100px 100px;
+  padding: 50px 100px;
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -107,6 +113,7 @@ button.btn {
   letter-spacing: 0.1em;
   color: #212529;
   border-radius: 0.5rem;
+  margin: 50px;
 }
 
 .btn-wrap--perspective {
@@ -154,7 +161,7 @@ a.btn-3db:after {
   -webkit-transform-origin: 0 0;
   transform-origin: 0 0;
 
-  border-radius: 0 0 4px 4px;
+  border-radius: 0px 0 10px 4px;
   background: #53a6d7;
 }
 

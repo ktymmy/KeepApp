@@ -68,3 +68,92 @@ outline: none;
   -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
 }
+
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  padding: 50px 100px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+  margin: 50px;
+}
+
+.btn-wrap--perspective {
+  display: inline-block;
+
+  -webkit-perspective: 800px;
+  perspective: 800px;
+}
+
+a.btn-3d {
+  display: block;
+
+  -webkit-transform: rotateX(35deg);
+
+  transform: rotateX(35deg);
+
+  color: #fff;
+  border-radius: 0.25rem 0.25rem 0 0;
+  background: #5cbcf6;
+
+  -webkit-transform-style: preserve-3d;
+
+  transform-style: preserve-3d;
+}
+
+a.btn-3d:after {
+  position: absolute;
+  z-index: -1;
+
+  content: "";
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+a.btn-3db:after {
+  top: calc(100% - 1px);
+  left: 0;
+
+  width: 100%;
+  height: 40%;
+
+  -webkit-transform: rotateX(-90deg);
+
+  transform: rotateX(-90deg);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+
+  border-radius: 0px 0 10px 4px;
+  background: #53a6d7;
+}
+
+a.btn-3db:hover {
+  -webkit-transform: rotateX(0);
+  transform: rotateX(0);
+
+  color: #fff;
+  border-radius: 0.25rem;
+}
+
+.fa-position-right {
+  position: absolute;
+  top: calc(50% - 0.5em);
+  right: 1rem;
+}

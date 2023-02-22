@@ -65,7 +65,7 @@
     <form action="deleteresult.php" method="POST">
         <div class="col">
             <p class="text-danger fs-5 fw-bold">
-                下記のデータを削除します。
+                <h3>下記のデータを<span class="attention">削除</span>します。
             </p>
         </div>
 

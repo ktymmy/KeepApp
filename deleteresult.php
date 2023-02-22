@@ -62,24 +62,23 @@
     </header>
 
     <main>
-      <div class="form-control">
+        <div id="containter">
 
-        <div class="p-5 row">
-          <div class="col-md-5">
-          
             <div class="col">
-                <p class="text-danger"><?= $result["message"];?></p>
+                <h3><p class="text-danger"><?= $result["message"];?></p></h3>
             </div>
 
            
-            <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-                <a class="R-button" href="list.php">戻る</a>
+            <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="list.php">LISTへ戻る</a>
             </div>
-
-          </div>
-
-        </div>
-      </div>
+            <br/>
+            <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+            </div>
+            
+        
+        </div>    
     </main>
 </body>
 
