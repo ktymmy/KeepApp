@@ -1,3 +1,4 @@
+/* 入力欄 */
 *::-webkit-input-placeholder {
   color: #000000;
 }
@@ -19,8 +20,8 @@ h3{
 color: #feffff;
 font-family: cursive;
 font-weight: bold;
-font-size: 72px;
-margin-top: 50px;
+font-size: 100px;
+margin-top: 40px;
 }
 
 .textbox {
@@ -30,9 +31,9 @@ border: 1px solid #f2f2f2;
 color: #0f0f0f;
 opacity: .7;
 border-radius: 10px;
-padding: 30px;
+padding: 70px;
 text-align: center;
-width: 500px;
+width: 800px;
 transition: all .3s;
 -webkit-transition: all .3s;
 -moz-transition: all .3s;
@@ -42,11 +43,11 @@ background-color: #ffffff;
 }
 
 .textbox:focus {
-width: 700px;
+width: 1000px;
 outline: none;
 }
 
-
+/* 登録ボタン */
 .R-button{
   margin-top: 100px;
   font-size: 50px;
@@ -69,7 +70,7 @@ outline: none;
   transform: rotateY(360deg);
 }
 
-
+/* 戻るボタン */
 .btn,
 a.btn,
 button.btn {
@@ -156,4 +157,9 @@ a.btn-3db:hover {
   position: absolute;
   top: calc(50% - 0.5em);
   right: 1rem;
+}
+
+
+.category{
+  font-size: 80px;
 }
