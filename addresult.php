@@ -51,6 +51,15 @@
         $result['message'] = "既に登録されています";
        }
 
+       $sql_cnt = "SELECT COUNT(url) FROM keep_url WHERE url = :url";
+       $stmt = $db->prepare($sql_cnt);
+       $stmt->bindParam('url', $url);
+       $stmt->execute();
+       if ($stmt->fetch()[0] == 1) {
+        $result['status'] = false;
+        $result['message'] = "既に登録されています";
+       }
+
        // いったん切断
        $stmt = null;
        $db = null;
