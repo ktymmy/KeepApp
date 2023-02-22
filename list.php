@@ -64,24 +64,25 @@
 
     <main>
         <div id="containter">
-        <form action="list.php" method="GET" class="mt-5 m-3">
-              <label class="category" for="name">NAME</label>
-              <input class="form-control form-control-lg" type="text" name="name">
-           
-
-           
-              <label class="form-label" for="category">CATEGORY</label>
-              <select class="category" name="category">
-                  <option value="1" selected>LIST</option>
-                  <option value="2">FAVORITE</option>
-              </select>
+            <form action="list.php" method="GET" class="mt-5 m-3">
+                <h3><label  for="name">NAME</label></h3>
+                <input class="category" type="text" name="name">
             
-           
-              <div class="pt-5 px-0 d-grid gap-2 d-md-flex justify-content-md-end">
-                <input class="R-button" type="submit" value="検索">
-              </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
-        </form>
-    
+
+            
+                <h3><label class="form-label" for="category">CATEGORY</label></h3>
+                <select class="category" name="category">
+                    <option value="1" selected>LIST</option>
+                    <option value="2">FAVORITE</option>
+                </select>
+                
+            
+                <div class="pt-5 px-0 d-grid gap-2 d-md-flex justify-content-md-end">
+                    <input class="R-button" type="submit" value="検索">
+                </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
+            </form>
+        
+        
            
        
             <table class="main_table">

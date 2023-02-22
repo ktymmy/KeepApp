@@ -27,9 +27,9 @@
                         <div class="button">
                                 <li><a href="list.php"><span>LIST</span></a></li>
                         
-                            <li> <a href="favorite.php"><span>FAVORITE</span></a></li>
+                            <!-- <li> <a href="favorite.php"><span>FAVORITE</span></a></li> -->
                         
-                            <li><a href="select.php"><span>ADD</span></a></li>
+                            <li><a href="add.php"><span>ADD</span></a></li>
                         </div>
                     </ul>
                 </nav>
