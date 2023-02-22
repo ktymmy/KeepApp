@@ -42,6 +42,7 @@
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
     <link href="./table.css" rel="stylesheet">
+    <link href="./add.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -56,6 +57,11 @@
     </header>
 
     <main>
+        <div id="containter">
+            <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+            </div>
+        </div>  
         <div class="container">
             <table class="main_table">
                 <thead class="main_thead">
