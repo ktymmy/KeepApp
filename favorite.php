@@ -3,22 +3,38 @@
     require_once __DIR__ . "/utils.php";
     $favo_site_name = filter_input(INPUT_GET, "favo_site_name");
     $favo_url = filter_input(INPUT_GET, "favo_url");
+    $category = filter_input(INPUT_GET, "category");
 
     $dsn = "mysql:host=localhost;dbname=keep;charset=utf8mb4";
     try{
         $db = new PDO($dsn, "kp_user", "ecc");
         $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-        $sql = "SELECT * FROM keep_favo_url ";
+        $sql = "SELECT * FROM keep_url";
         $where = "";
         $nameLike = "";
         if($favo_site_name != ""){
             $nameLike = "%".$favo_site_name."%";
             $where = " WHERE favo_site_name like :favo_site_name ";
         }
+        if($category != 1 && $category != ""){
+            if($category == 2){
+              $categorywhere = "favorite";
+            }else{
+              $categorywhere = "list";
+            }
+            if($name != ""){
+              $where = $where."AND category = :category";
+            }else{
+              $where = "WHERE category = :category";
+        }
 
         $stmt = $db->prepare($sql.$where);
         if($favo_site_name != ""){
             $stmt->bindParam(":favo_site_name",$nameLike,PDO::PARAM_STR);
+        }
+
+        if($category != ""){
+            $stmt->bindParam(":category",$categorywhere,PDO::PARAM_STR);
         }
 
         $stmt->execute();
