@@ -32,7 +32,7 @@
         // }
 
         if($site_name != ""){
-            $where = $where. " AND site_name like '%:site_name%' ";
+            $where = $where. " AND site_name like '%site_name%' ";
         }
        
 
