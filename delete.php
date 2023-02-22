@@ -46,7 +46,7 @@
     <meta charset="UTF-8">
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
-    <link href="./table.css" rel="stylesheet">
+    <link href="./delete.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -69,24 +69,31 @@
             </p>
         </div>
 
+        <div id="containter">
 
-        <div class="col">
-            <label class="form-label" for="site_name">Name</label>
-            <input type="text" name="site_name" id="site_name" class="form-control form-control-lg border-info bg-light" value="<?=$result["site_name"]?>" readonly>
+            <div class="col">
+                <label class="form-label" for="site_name">Name</label>
+                <input  class="textbox" type="text" name="site_name" id="site_name"  value="<?=$result["site_name"]?>" readonly>
+            </div>
+
+            <div class="col">
+                <label class="form-label" for="url">Url</label>
+                <input  class="textbox" type="text" name="url" id="url"  value="<?=$result["url"]?>" readonly>
+            </div>
+
+            <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="submit" class="R-button">削除</button>
+            </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
+
+            <div class="btn-wrap--perspective">
+                <a href="list.php" class="btn btn-3d btn-3db">戻る<i class="fas fa-angle-down fa-position-right"></i></a>
+            </div>
+            
+
         </div>
-
-        <div class="col">
-            <label class="form-label" for="url">Url</label>
-            <input type="text" name="url" id="url" class="form-control form-control-lg border-info bg-light" value="<?=$result["url"]?>" readonly>
-        </div>
-
-        <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-            <button type="submit" class="btn btn-danger btn-lg">削除</button>
-            <a class="btn btn-secondary btn-lg" href="">戻る</a>
-        </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
-
 
     </form> 
+    
     </main>
 </body>
 

@@ -75,7 +75,7 @@
 
                         <td>
                                 <div class="t_button">
-                                    <a href="delete.php?favo_site_name=<?= $val["favo_site_name"] ?>">delete</a>
+                                    <a href="deletefavo.php?favo_site_name=<?= $val["favo_site_name"] ?>">delete</a>
                                 </div>
                             </td>
                     </tr>

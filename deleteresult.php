@@ -47,7 +47,7 @@
     <meta charset="UTF-8">
     <title>keepApp</title>
     <link href="./all.css" rel="stylesheet">
-    <link href="./table.css" rel="stylesheet">
+    <link href="./delete.css" rel="stylesheet">
     <script src="./KeepApp.js"></script>
 </head>
 
@@ -73,7 +73,7 @@
 
            
             <div class="p-5 d-grid gap-2 d-md-flex justify-content-md-start">
-                <a href="list.php">戻る</a>
+                <a class="R-button" href="list.php">戻る</a>
             </div>
 
           </div>
