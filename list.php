@@ -59,20 +59,37 @@
         </div>
     </header>
 
+    
+
+
     <main>
         <div id="containter">
-            <div class="btn-wrap--perspective">
-                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
-            </div>
-        </div>  
+        <form action="list.php" method="GET" class="mt-5 m-3">
+              <label class="category" for="name">NAME</label>
+              <input class="form-control form-control-lg" type="text" name="name">
+           
 
-        <div class="container">
+           
+              <label class="form-label" for="category">CATEGORY</label>
+              <select class="category" name="category">
+                  <option value="1" selected>LIST</option>
+                  <option value="2">FAVORITE</option>
+              </select>
+            
+           
+              <div class="pt-5 px-0 d-grid gap-2 d-md-flex justify-content-md-end">
+                <input class="R-button" type="submit" value="検索">
+              </div><!-- .p-5 d-grid gap-2 d-md-flex justify-content-md-end -->
+        </form>
+    
+           
+       
             <table class="main_table">
                 <thead class="main_thead">
                     <tr>
                         <th>name</th>
                         <th>delete</th>
-
+                    
                     </tr>
                 </thead>
                 <tbody>
@@ -89,10 +106,16 @@
                                     <a href="delete.php?site_name=<?= $val["site_name"] ?>">delete</a>
                                 </div>
                             </td>
+
                         </tr>
                     <?php endforeach ?>
                 </tbody>
             </table>
+
+
+            <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+            </div>
         </div>
 
     </main>
