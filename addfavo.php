@@ -34,6 +34,10 @@
                  <button type="submit" class="R-button">お気に入り</button>
               </div>
 
+              <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+            </div>
+
             </div>
        
         </form>

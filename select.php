@@ -28,6 +28,13 @@
                 <a href="addfavo.php">ADD FAVORITE</button>
             </div>    
       
+
+
+            <div id="containter">
+            <div class="btn-wrap--perspective">
+                <a class="btn btn-3d btn-3db" href="home.php">HOMEへ戻る</a>
+            </div>
+        </div>  
     </main>
 </body>
 
