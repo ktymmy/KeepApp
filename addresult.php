@@ -13,6 +13,7 @@
     // フォームデータ取得
     $site_name = filter_input(INPUT_POST, "site_name");
     $url = filter_input(INPUT_POST, "url");
+    $category = filter_input(INPUT_POST,"category");
 
     //結果保存用配列
     $result = [
@@ -28,6 +29,9 @@
        $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
        $db->beginTransaction();
+
+       //カテゴリの値を文字列に変換
+       $category = $category === 1 ? "ピザ" : "ドリンク";
 
        // スペースを空文字に置き換える
        $site_name = str_replace(array(" ","　"),"",$site_name);
@@ -72,12 +76,13 @@
        $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
        if($result['status']){
-            $sql = "INSERT INTO keep_url VALUES(:site_name, :url)";
+            $sql = "INSERT INTO keep_url VALUES(:site_name, :url, :category)";
             //SQLの準備
             $stmt = $db->prepare($sql);
             //データのバインド
             $stmt->bindParam('site_name', $site_name, PDO::PARAM_STR);
             $stmt->bindParam('url', $url, PDO::PARAM_STR);
+            $stmt->bindParam('category', $category, PDO::PARAM_STR);
             // SQL実行(戻り値は変更した件数)
             $result["result"] = $stmt->execute();
             //結果が1(1件挿入できた)ときはコミットする
