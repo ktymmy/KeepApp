@@ -137,7 +137,7 @@
                 </div>
                 <br/>
                 <div class="btn-wrap--perspective">
-                    <a class="btn btn-3d btn-3db" href="select.php"> ADDへ戻る </a>
+                    <a class="btn btn-3d btn-3db" href="add.php"> ADDへ戻る </a>
                 </div>
         </div>
     </main>
