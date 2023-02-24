@@ -31,7 +31,7 @@
        $db->beginTransaction();
 
        //カテゴリの値を文字列に変換
-       $category = $category === 1 ? "ピザ" : "ドリンク";
+       $category = $category === 1 ? "list" : "favorite";
 
        // スペースを空文字に置き換える
        $site_name = str_replace(array(" ","　"),"",$site_name);
